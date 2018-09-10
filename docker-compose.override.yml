@@ -1,0 +1,22 @@
+version:         '3.7'
+
+services:
+
+  backend:
+    environment:
+      NODE_ENV:  development
+    restart:     no
+    volumes:
+    - .:/usr/src/app/
+    ports:
+    - '3000:3000'
+    - '9229:9229'
+    command:     ["npm", "run", "debug"]
+
+  phpmyadmin:
+    ports:
+    - '5555:80'
+
+networks:
+  default:
+    name:        dev

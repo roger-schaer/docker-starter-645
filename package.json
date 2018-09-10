@@ -1,0 +1,24 @@
+{
+  "name": "docker-starter-645",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "debug": "./node_modules/.bin/forever -w -c 'node --inspect=0.0.0.0:9229' ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "handlebars-intl": "^1.1.2",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "forever": "^0.15.3",
+    "sequelize-cli": "^4.1.1"
+  }
+}
