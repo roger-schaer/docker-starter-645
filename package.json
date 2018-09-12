@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "debug": "./node_modules/.bin/forever -w -c 'node --inspect=0.0.0.0:9229' ./bin/www",
+    "debug": "./node_modules/.bin/nodemon -L --inspect=0.0.0.0:9229 ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
     "sequelize": "^4.38.0"
   },
   "devDependencies": {
-    "forever": "^0.15.3",
+    "nodemon": "^1.18.4",
     "sequelize-cli": "^4.1.1"
   }
 }
