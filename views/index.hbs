@@ -8,7 +8,7 @@
         <li>
             <span>{{this.description}}</span>
             <span>(Due: {{formatDate this.dueDate year='numeric' month='2-digit' day='2-digit' timeZone='Europe/Zurich'}})</span>
-            <input type="checkbox" readonly {{#if this.done}}checked{{/if}}/>
+            <input type="checkbox" readonly disabled {{#if this.done}}checked{{/if}}/>
         </li>
     {{/each}}
 </ul>

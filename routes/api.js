@@ -10,11 +10,11 @@ router.get('/populateDB', async function (req, res, next) {
 
   // Create promises for Todos
   let apple = models.Todo.create({description: 'Eat an apple', dueDate: new Date(), done: true});
-  let tombraider = models.Todo.create({description: 'Play Shadow of the Tomb Raider', dueDate: new Date('2018/09/15'), done: true});
+  let game = models.Todo.create({description: 'Play The Last of Us Part II', dueDate: new Date('2020/02/22'), done: false});
   let nodejs = models.Todo.create({description: 'Learn Node.js', dueDate: new Date(), done: false});
 
   // Create dummy data
-  let todos = await Promise.all([apple, tombraider, nodejs]);
+  let todos = await Promise.all([apple, game, nodejs]);
 
   console.log('Todos created : ' + JSON.stringify(todos));
   res.redirect('/');
