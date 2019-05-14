@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:10
 MAINTAINER Roger Schaer <roger.schaer@hevs.ch>
 
 # Create app directory
